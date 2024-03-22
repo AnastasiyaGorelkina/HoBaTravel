@@ -62,3 +62,47 @@
     .link-nav .link:active {
     color: var(--accsent-color);
     }
+
+    .site-auth{
+        list-style: none;
+        letter-spacing: 0.02em;
+    }
+    .site-auth .link {
+        color: var(--primary-text-color);
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.15;
+    
+        text-decoration: none;
+    }
+    .site-auth .link:hover, 
+    .site-auth .link:focus {
+        color: var(--accsent-color);
+    }
+
+/* Основний контент */
+
+/* Герой */
+.hero {
+    background-color: var(--secondary-background-color);
+}
+.hero.text{
+    color: var(--secondary-ac-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.hero .button {
+    background-color: var(--accsent-color);
+    color: var(--secondary-ac-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
