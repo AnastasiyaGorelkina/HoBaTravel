@@ -18,8 +18,32 @@
         font-family: roboto, sans-serif;
         letter-spacing: 0.03em;
     }
-/* Шапка */
 
+    .container {
+        /* border: 2px dashed tomato; */
+    
+        width: 1200px;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1, h2, h3, p {
+        margin: 0;
+    }
+/* Шапка */
+    .header {
+        border-bottom: 1px solid #ECECEC;
+    }
+    .navcont {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;    
+    }
+
+    .navbox {
+        display: flex;
+        align-items: center;
+    }
 /* Лого */
     .logo{
         color:var(--accsent-color) ;
@@ -46,10 +70,23 @@
 
  /* Навігація */
     .site-nav{
+        display: flex;
+        min-width: 281px;
+        margin: 0;
+        padding: 0;
+        margin-left: 93px;
+
         list-style: none;
         letter-spacing: 0.02em;
     }
+    .site-nav .item + .item{
+        margin-left: 50px;
+    }
+    
     .site-nav .link {
+        display: inline-block;
+        padding: 32px 0px;
+
         color: var(--titel-text-color);
     
         font-weight: 500;
@@ -67,10 +104,19 @@
     }
 
     .site-auth{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-left: auto;
+        padding: 0;
+
         list-style: none;
         letter-spacing: 0.02em;
     }
     .site-auth .link {
+        display: inline-block;
+        padding: 32px 0px;
+
         color: var(--primary-text-color);
     
         font-weight: 500;
@@ -79,6 +125,10 @@
     
         text-decoration: none;
     }
+    .site-auth .item + .item{
+        margin-left: 50px;
+    }
+    
     .site-auth .link:hover, 
     .site-auth .link:focus {
         color: var(--accsent-color);
