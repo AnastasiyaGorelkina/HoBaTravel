@@ -1,0 +1,64 @@
+:root {
+    --logo-accsent: #000000;
+    --background-basis: #F5F5F5;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #2F303A;
+    --primary-text-color: #757575;
+    --titel-text-color: #212121;
+    --accsent-color: #0bf23d;
+    --secondary-ac-color: #ffffff;
+    --button-color: #F5F4FA;
+    --text-link-footer: hexa{#ffffff99};
+    }
+
+    body {
+        background-color: var(--secondary-ac-color);
+        color: var(--primary-text-color);
+    
+        font-family: roboto, sans-serif;
+        letter-spacing: 0.03em;
+    }
+/* Шапка */
+
+/* Лого */
+    .logo{
+        color:var(--accsent-color) ;
+        
+        font-family: raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+    }
+
+    .logo-head{
+        color:var(--logo-accsent) ;
+    }
+
+    .logo-text{
+        color: var(--primary-text-color);
+        font-size: 20px;
+    }
+
+ /* Навігація */
+    .site-nav{
+        list-style: none;
+        letter-spacing: 0.02em;
+    }
+    .site-nav .link {
+        color: var(--titel-text-color);
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.15;
+    
+        text-decoration: none;
+    }
+    .site-nav .link:hover, 
+    .site-nav .link:focus {
+    color: var(--accsent-color);
+    }
+    .link-nav .link:active {
+    color: var(--accsent-color);
+    }
