@@ -47,8 +47,6 @@
 /* Лого */
     .logo{
         padding-top: 15px;
-
-        color:var(--accsent-color);
         
         font-family: raleway, sans-serif;
         font-weight: 700;
@@ -58,9 +56,6 @@
         text-decoration: none;
     }
 
-    .logo-head{
-        color:var(--logo-accsent);
-    }
     .logo-footer{
         color: var(--secondary-ac-color);
     }
