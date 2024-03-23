@@ -5,7 +5,7 @@
     --secondary-background-color: #2F303A;
     --primary-text-color: #757575;
     --titel-text-color: #212121;
-    --accsent-color: #0bf23d;
+    --accsent-color: #00FF00;
     --secondary-ac-color: #ffffff;
     --button-color: #F5F4FA;
     --text-link-footer: hexa{#ffffff99};
@@ -46,7 +46,9 @@
     }
 /* Лого */
     .logo{
-        color:var(--accsent-color) ;
+        padding-top: 15px;
+
+        color:var(--accsent-color);
         
         font-family: raleway, sans-serif;
         font-weight: 700;
@@ -57,7 +59,7 @@
     }
 
     .logo-head{
-        color:var(--logo-accsent) ;
+        color:var(--logo-accsent);
     }
     .logo-footer{
         color: var(--secondary-ac-color);
@@ -171,6 +173,7 @@
         line-height: 1.6;
         text-align: center;
         letter-spacing: 0.03em;
+        text-shadow: 2px 2px 2px #757575;
     }
     .button:hover,
     .button:focus {
