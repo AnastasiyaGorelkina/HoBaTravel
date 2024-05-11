@@ -45,22 +45,29 @@
         align-items: center;
     }
 /* Лого */
-    .logo{
-        display: block;
-        height: 100%;
+    /* .logo{ */
+        /* display: block; */
+        /* object-fit: cover;
+        object-position: top; */
+    .icon{
         width: 100%;
-
-        object-fit: cover;
-        object-position: 50% 10px;    
     }
     .thumb{
         height: 90px;
         width: 200px;
-    }
-    .icon-maunt{
-        fill: #00FF00;
+        overflow: hidden;
+        
     }
 
+    .logo{
+        color: var(--accsent-color);
+        font-family: raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+    }
     .logo-footer{
         color: var(--secondary-ac-color);
 
