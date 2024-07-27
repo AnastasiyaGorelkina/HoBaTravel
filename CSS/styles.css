@@ -8,7 +8,7 @@
     --accsent-color: #00FF00;
     --secondary-ac-color: #ffffff;
     --button-color: #F5F4FA;
-    --text-link-footer: hexa{#ffffff99};
+    --text-link-footer:  #757575;;
     }
 
     body {
@@ -154,10 +154,30 @@
 
 /* Герой */
 .hero {
-    background-color: var(--secondary-background-color);
+    background-color:var(--secondary-background-color);
+    background-image: url('/imege/Hero-bg.jpg');
+    background-size: cover;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 20px;
+
+    min-height: 300px;
+    overflow: hidden;
+    background-image: url('/imege/Hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero.text{
+    margin-top: 40px;
+    margin-bottom: 60px;
+
     color: var(--secondary-ac-color);
+    background: transparent;
+    text-shadow: #05151ec7 1px 0 10px;
 
     font-weight: 900;
     font-size: 44px;
@@ -167,7 +187,15 @@
     letter-spacing: 0.06em;
 }
 .hero .button {
+    
+    box-shadow: 0px 1px 7px 7px #0c220c33 inset;
+    padding: 10px 20px;
+    border: #0f900f;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
     background-color: var(--accsent-color);
+    
     color: var(--secondary-ac-color);
 
     font-weight: 700;
@@ -175,9 +203,22 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
 }
+.hero .button:hover {
+    box-shadow: 9px 5px 44px 24px rgba(34, 80, 34, 0.26);
+    transform: scale(1.1);
+    
+
+    background: radial-gradient(
+    at center,
+    var(--accsent-color), 75%,
+    #0f900f
+    
+  );
+}
 
 /* Кнопки */
     .button {
+
         background-color: var(--button-color);
         color: var(--titel-text-color);
         cursor: pointer;
