@@ -20,16 +20,32 @@
     }
 
     .container {
-        /* border: 2px dashed tomato; */
-    
         width: 1200px;
-        padding: 0 15px;
         margin-left: auto;
         margin-right: auto;
     }
     h1, h2, h3, p {
         margin: 0;
     }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+  }
+    img {
+    display: block;
+    max-width: 100%;
+}
+
+        /* Наповнення */
+
 /* Шапка */
     .header {
         border-bottom: 1px solid #ECECEC;
@@ -289,15 +305,67 @@
         line-height: 1.87;
     }
         /* Особливості */
-    .list.specialty {
+    .specialty-thumb {
+        width: 1160px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+        justify-content: start;
+        margin-bottom: 20px;
 
-        .item {
+  
+        .box {
             width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 10px 8px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+   
+
+        .box-name {
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .img-box {
+            width: 350px;
+            border-bottom-right-radius:250px;
+            overflow: hidden;
+            box-shadow: 10px 8px 8px 0px rgba(34, 60, 80, 0.2);
         }
     }
+    
+ .specialty-thumb-second {
+    width: 1160px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+
+    .box-second {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-shadow: -10px -8px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    .img-box-second {
+        width: 350px;
+        border-top-left-radius: 250px;
+        overflow: hidden;
+        box-shadow: -10px -8px 8px 0px rgba(34, 60, 80, 0.2)
+    }
+    .box-name-second {
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+    }
+ }
+
 /* Підвал */
     .footer {
         background-color:var(--secondary-background-color) ;
