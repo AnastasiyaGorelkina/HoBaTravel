@@ -183,14 +183,14 @@
     justify-self: center;
     padding: 20px;
 
-    min-height: 300px;
+    min-height: 400px;
     overflow: hidden;
     background-image: url('/imege/Hero-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .hero.text{
-    margin-top: 40px;
+    margin-top: 90px;
     margin-bottom: 60px;
 
     color: var(--secondary-ac-color);
