@@ -173,7 +173,7 @@
 /* Герой */
 .hero {
     background-color:var(--secondary-background-color);
-    background-image: url('/imege/Hero-bg.jpg');
+    background-image: url('../imege/Hero-bg.jpg');
     background-size: cover;
 }
 .hero .container {
