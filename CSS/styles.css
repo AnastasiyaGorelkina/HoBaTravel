@@ -446,7 +446,7 @@
     /* рекламний банер */
     .publicity {
         background-color:var(--secondary-background-color);
-        background-image: url(/imege/white-paper-texture-background.avif);
+        background-image: url(./imege/white-paper-texture-background.avif);
         background-size: cover;
     }
     .publicity .container {
