@@ -185,9 +185,7 @@
 
     min-height: 400px;
     overflow: hidden;
-    background-image: url('/imege/Hero-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: transparent;
 }
 .hero.text{
     margin-top: 90px;
@@ -386,7 +384,7 @@
 
     position: absolute;
             top: 0px;
-            left: 1420px;
+            left: 1430px;
             width: 100%;
             height: 100%;
 
