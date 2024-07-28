@@ -60,6 +60,10 @@
         display: flex;
         align-items: center;
     }
+    .link.current {
+        color: #f3ff08;
+        transform: scale(1.3);
+    }
 /* Лого */
     /* .logo{ */
         /* display: block; */
@@ -127,6 +131,7 @@
     
         text-decoration: none;
     }
+    
     .site-nav .link:hover, 
     .site-nav .link:focus {
     color: var(--accsent-color);
@@ -433,4 +438,79 @@
     .link.tel,
     .link.mail {
         color: var(--text-link-footer);
+    }
+
+
+    /* Клуб */
+
+    /* рекламний банер */
+    .publicity {
+        background-color:var(--secondary-background-color);
+        background-image: url(/imege/white-paper-texture-background.avif);
+        background-size: cover;
+    }
+    .publicity .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 150px;
+    
+        min-height: 400px;
+        overflow: hidden;
+        background: transparent;
+    }
+    .box-choice {
+        width: 250px;
+        height: 250px;
+        padding: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        font-size: 22px;
+        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -3px 3px 0px rgba(0, 0, 0, 0.3);;
+
+        border-radius: 100%;
+        box-shadow: 70px 6px 20px -20px rgba(0, 0, 0, 0.3), 
+                    95px 10px 44px 0px rgba(0, 0, 0, 0.3), 
+                    inset -65px 8px 44px 4px rgba(0, 0, 0, 0.3);
+
+        /* background-color: #00FF0095; */
+        background: radial-gradient(
+            100% 100% at 50% 50%,
+             rgba(90, 255, 1, 0.41) 40%,
+             rgba(19, 107, 3, 0.701) 78%
+  );
+        color: var(--secondary-ac-color);
+        text-align: center;
+    }
+    .box-choice.selfish {
+        /* background-color: #d900ff95; */
+        background: radial-gradient(
+    113% 106% at 50% 50%,
+    rgba(225, 1, 255, 0.232) 40%,
+    rgba(113, 7, 179, 1) 78%
+    );
+    box-shadow: -78px 6px 20px -20px rgba(0, 0, 0, 0.3),
+                -95px 10px 44px 0px rgba(0, 0, 0, 0.3), 
+                 inset 65px 8px 44px 4px rgba(0, 0, 0, 0.3);
+  
+    }
+    .box-choice .button {
+        width: 120px;
+        height: 50px;
+        border: 1px solid rgba(2, 10, 1, 0.2);
+        border-radius: 75px;
+        box-shadow: inset 0px 0px 19px 0px rgba(130, 135, 130, 0.79);
+        color: var(--secondary-background-color);
+        text-shadow: none;
+    }
+
+
+    /* Фільтр бар */
+    .filtr-bar .container {
+        display: flex;
     }

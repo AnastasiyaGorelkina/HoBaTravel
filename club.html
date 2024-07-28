@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title lang="en">Club</title>
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <!--Основна навігація-->
+        <div class="container navcont">
+            <nav class="navbox">
+                <div class="thumb">
+                    <a href="./index.html">
+                        <svg class="logo" width="200">
+                            <use href="./imege/HoBoLogo_s.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <!-- <a><img src="/imege/HoBoLogo_s.svg" alt="HoBa Trevel logo" width="200" class="logo" /></a> -->
+                </div>
+                
+                <ul class="site-nav">
+                    <li class="item"><a href="./club.html" class="link current">Клуб</a></li>
+                    <li class="item"><a href="" class="link">Розклад</a></li>
+                    <li class="item"><a href="" class="link">Подорожі</a></li>
+                    <li class="item"><a href="" class="link">Галерея</a></li>
+                    <li class="item"><a href="" class="link">Про нас</a></li>
+                </ul>
+            </nav>
+
+            <!--Основні контакти-->
+            <ul class="site-auth">
+                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@hobotravel.com" class="link">info@hobotravel.com</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Основний (унікальний) вміст-->
+    <main>
+        <!-- Реклабний банер *гість +(питтання + кнопка*учасник)-->
+         <section class="publicity">
+            <div class="container">
+                <!-- вибір між замовленням і вибором побажань -->
+                <div class="box-choice selfish">
+                    <p class="name-choice">Індивідуальний тур на свій смак?</p>
+                    <button type="button" class="button">Замовити</button>
+                </div>
+
+                <div>
+                    <p>чи</p>
+                </div>
+
+                <div class="box-choice">
+                    <p class="name-choice">Врахувати побажання до подорожі?</p>
+                    <button type="button" class="button">Вибрати</button>
+                </div>
+
+            </div>
+         </section>
+        <!-- Фільтр бар -->
+            <section class="filtr-bar">
+                <div class="container ">
+                    <!-- кнопка випадаючого меню фільтрів -->
+                    <button type="button" class="button filtr-menu">більше фільтрів</button>
+                    <!-- колекція фільтрів з категорій (формуєтся після опитування)-->
+                    <ul class="list filter-collections">
+                        <li> 
+                            <div class="box-collection"> 
+                                <button type="button" class="button filtr">Піші</button>
+                                <button type="button" class="button filtr">Вело</button>
+                                <button type="button" class="button filtr">Авто</button> 
+                            </div>
+                        </li>
+                        <li> 
+                            <div class="box-collection"> 
+                                <button type="button" class="button filtr">Гори</button>
+                                <button type="button" class="button filtr">Міста</button>
+                                <button type="button" class="button filtr">озера</button> 
+                            </div>
+                        </li>
+                        <li> 
+                            <div class="box-collection"> 
+                                <button type="button" class="button filtr">Кемпінг</button>
+                                <button type="button" class="button filtr">Готель</button>
+                                <button type="button" class="button filtr">Вілла</button> 
+                            </div>
+                        </li>
+                        <li> 
+                            <div class="box-collection"> 
+                                <button type="button" class="button filtr">Домашня їжа</button>
+                                <button type="button" class="button filtr">Ресторан</button>
+                                <button type="button" class="button filtr">Перекус</button> 
+                            </div>
+                        </li>
+                        <li> 
+                            <div class="box-collection"> 
+                                <button type="button" class="button filtr">Спа</button>
+                                <button type="button" class="button filtr">Басеін</button>
+                                <button type="button" class="button filtr">Массаж</button> 
+                            </div>
+                        </li>
+                        <li> 
+                            <div class="box-collection"> 
+                                <button type="button" class="button filtr">Дайвінг</button>
+                                <button type="button" class="button filtr">Парашют</button>
+                                <button type="button" class="button filtr">Альпінізм</button> 
+                            </div>
+                        </li>
+                    </ul>
+                    <!--чекбакс\кнопка зняти всі фільтри -->
+                    <button type="button" class="button filter-off">викл фільтрів</button>
+                </div>
+                
+            </section>
+        <!-- Колекція подорожей за рейтингом\акції + активне\збережене\пропоную *учасник -->
+            <section class="travel-projects">
+                <!-- Бар управління колекцією (рекомендації - учасник\ Пропоную - виконувач\ Збережене - всі)-->
+             <div class="container">
+                <ul class="list bar-travel-projects">
+                    <li>
+                        <button type="button" class="button">Рекомендації</button>
+                    </li>
+                    <li>
+                        <button type="button" class="button">вниз\вверх</button>
+                        <!-- Фільтр меню містить рейтинг, нове, найближчі, ціна -->
+                        <button type="button" class="button">фільтр меню</button>
+                    </li>
+                    <li>
+                        <button type="button" class="button">Акції</button>
+                    </li>
+                </ul>
+                <!-- (Кнопки вибираю, пропоную *учасник) кнопка рейтингу = +меню кнопки рейтинг, нове, найблище, ціна  кнопка акції-->
+             </div>
+                <!-- Колекція відфільтрованих турів -->
+             <div class="container">
+                <ul class="list card-set-travels">
+                    <li class="travel-card">
+                        <div class="travel-card-thumb">
+
+                            <div class="box-name">
+                                <h3 class="title name-company">HoBa Travel</h3>
+                            </div>
+                            
+                            <div class="img-box">
+                                <img src="./imege/vybirite-metod.jpg"
+                            alt="Люди складають пазл, увага жо деталей" width="350"
+                            height="200">
+                            </div>
+
+                            <div class="box">
+                                <p class="text name-specialty">
+                                    Враховуємо ваші унікальні особливості під час туру. 
+                                    Нам важливо знати (непереносимість лактози, алергії, веган, не відвідуєте лазні тощо),
+                                    щоб створити безпене середовише для вас
+                                </p>
+                            </div>
+
+                            <button type="button" class="button">Дізнатись більше</button>
+                            
+                        </div>
+                    </li>
+                </ul>
+             </div>
+            </section>
+            
+        <!-- Плаваюча кнопка зв'язку -->
+    </main>
+    <!--Підвал-->
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" lang="en" class="logo">Ho<span class="logo-footer">Ba</span> <span class="logo-text">Travel</span></a>
+            <!--Адреса-->
+            <address class="address">
+                <ul class="address-link">
+                    <li><a href="mailto:info@hobotravel.com" class="link tel">info@hobotravel.com</a></li>
+                    <li><a href="tel:+380961111111" class="link tel">+38 096 111 11 11</a></li>
+                    <li>Telegram</li>
+                    <li>facebook</li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+    <!-- модалка -->
+</body>
+
+</html>
