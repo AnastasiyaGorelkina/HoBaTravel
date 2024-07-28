@@ -446,7 +446,7 @@
     /* рекламний банер */
     .publicity {
         background-color:var(--secondary-background-color);
-        background-image: url(./imege/white-paper-texture-background.avif);
+        /* background-image: url(/imege/white-paper-texture-background.avif); */
         background-size: cover;
     }
     .publicity .container {
@@ -471,14 +471,15 @@
         gap: 20px;
 
         font-size: 22px;
-        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -3px 3px 0px rgba(0, 0, 0, 0.3);;
+        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -3px 3px 0px rgba(0, 0, 0, 0.3);
 
         border-radius: 100%;
         box-shadow: 70px 6px 20px -20px rgba(0, 0, 0, 0.3), 
                     95px 10px 44px 0px rgba(0, 0, 0, 0.3), 
                     inset -65px 8px 44px 4px rgba(0, 0, 0, 0.3);
+      
 
-        /* background-color: #00FF0095; */
+        
         background: radial-gradient(
             100% 100% at 50% 50%,
              rgba(90, 255, 1, 0.41) 40%,
@@ -490,9 +491,9 @@
     .box-choice.selfish {
         /* background-color: #d900ff95; */
         background: radial-gradient(
-    113% 106% at 50% 50%,
-    rgba(225, 1, 255, 0.232) 40%,
-    rgba(113, 7, 179, 1) 78%
+            113% 106% at 50% 50%,
+            rgba(225, 1, 255, 0.232) 40%,
+            rgba(113, 7, 179, 1) 78%
     );
     box-shadow: -78px 6px 20px -20px rgba(0, 0, 0, 0.3),
                 -95px 10px 44px 0px rgba(0, 0, 0, 0.3), 
@@ -508,7 +509,15 @@
         color: var(--secondary-background-color);
         text-shadow: none;
     }
-
+    .box-choice .button:hover,
+    .box-choice .button:focus {
+        box-shadow: inset 3px 5px 0px 0px rgba(161, 123, 35, 0.5);
+        background: radial-gradient(
+    113% 106% at 50% 50%,
+    rgba(239, 228, 0, 1) 29%,
+    rgba(255, 149, 0, 1) 71%
+  );
+    }
 
     /* Фільтр бар */
     .filtr-bar .container {
