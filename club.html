@@ -73,21 +73,25 @@
         <section class="filtr-bar">
                 <div class="container">
                     <!-- кнопка випадаючого меню фільтрів -->
-                    <button type="button" class="button filtr-menu">більше фільтрів</button>
+                    <button type="button" class="button filtr-menu">
+                        <svg class="icon-menu" width="30" height="30">
+                            <use href="./imege/symbol-defs.svg#icon-menu"></use>
+                        </svg>
+                    </button>
                     <!-- колекція фільтрів з категорій (формуєтся після опитування)-->
                     <ul class="list filter-collections">
                         <li> 
                             <div class="box-collection red"> 
                                 <button type="button" class="button-filtr on-foot">Піші</button>
-                                <button type="button" class="button-filtr">Вело</button>
-                                <button type="button" class="button-filtr">Авто</button> 
+                                <button type="button" class="button-filtr on-foot">Вело</button>
+                                <button type="button" class="button-filtr on-foot">Авто</button> 
                             </div>
                         </li>
                         <li> 
                             <div class="box-collection green"> 
-                                <button type="button" class="button-filtr">Гори</button>
-                                <button type="button" class="button-filtr">Міста</button>
-                                <button type="button" class="button-filtr">озера</button> 
+                                <button type="button" class="button-filtr on-sea">Гори</button>
+                                <button type="button" class="button-filtr on-sea">Міста</button>
+                                <button type="button" class="button-filtr on-sea">озера</button> 
                             </div>
                         </li>
                         <li> 
@@ -120,7 +124,11 @@
                         </li>
                     </ul>
                     <!--чекбакс\кнопка зняти всі фільтри -->
-                    <button type="button" class="button filter-off">викл фільтрів</button>
+                    <button type="button" class="button filtr-menu">
+                        <svg class="icon-menu" width="30" height="30">
+                             <use href="./imege/symbol-defs.svg#icon-shrink2"></use>
+                        </svg>
+                    </button>
                 </div>
                 
          </section>
