@@ -58,7 +58,7 @@
 
     .navbox {
         display: flex;
-        align-items: center;
+        align-items:center;
     }
     .link.current {
         color: #f3ff08;
@@ -121,7 +121,7 @@
     
     .site-nav .link {
         display: inline-block;
-        padding: 32px 0px;
+        padding: 0px 0px;
 
         color: var(--titel-text-color);
     
@@ -559,10 +559,11 @@
        background: #f11304;      
     }
     .button-filtr.on-foot:hover,
-    .button-filtr.on-foo:focus{
+    .button-filtr.on-foot:focus{
         background: #f11304;
         color: var(--secondary-ac-color);
     }
+
     .box-collection.green {
         background: #00d123;
     }
@@ -571,18 +572,43 @@
         background: #00d123;
         color: var(--secondary-ac-color);
     }
+
     .box-collection.blue {
         background: #0f00e6;
     }
+    .button-filtr.on-home:hover,
+    .button-filtr.on-home:focus{
+        background: #0f00e6;
+        color: var(--secondary-ac-color);
+    }
+
     .box-collection.yellow {
         background: #f2f201;
     }
+    .button-filtr.on-food:hover,
+    .button-filtr.on-food:focus{
+        background: #f2f201;
+        color: var(--secondary-ac-color);
+    }
+    
     .box-collection.orange {
         background: #f8a50b;
     }
+    .button-filtr.on-relax:hover,
+    .button-filtr.on-relax:focus{
+        background: #f8a50b;
+        color: var(--secondary-ac-color);
+    }
+
     .box-collection.violet{
         background: #b600f8;
     }
+    .button-filtr.on-extreme:hover,
+    .button-filtr.on-extreme:focus{
+        background: #b600f8;
+        color: var(--secondary-ac-color);
+    }
+    
     .button-filtr {
         width: 130px;
         height: 50px;
