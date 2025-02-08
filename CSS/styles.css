@@ -739,3 +739,53 @@
         color: #00d123;
     }
     
+/* Календар турів */
+/* Вибір сезонів */
+.season-title-box{
+    height: 70px;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+}
+
+.seasons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.season-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100% / 4);
+    min-height: 600px;
+    overflow: hidden;
+    background: transparent;
+
+    background-color: var(--secondary-background-color);
+    background-size: cover;
+}
+.season-box.winter{
+    background-image: url('../imege/winter2.jpg');
+}
+.season-box.spring{
+    background-image: url('../imege/crocus-tur.jpg');
+}
+.season-box.summer{
+    background-image: url('../imege/summer.jpg');
+}
+.season-box.autumn{
+    background-image: url('../imege/autumn.jpg');
+}
+
+.button.season{
+    padding: 20px 30px;
+    background-color: #1e231fca;
+    color: var(--secondary-ac-color);
+    text-shadow: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+}
