@@ -70,7 +70,7 @@
             </div>
          </section>
         <!-- Фільтр бар -->
-        <section class="filtr-bar">
+        <section class="filtr-bar ">
                 <div class="container">
                     <!-- кнопка випадаючого меню фільтрів -->
                     <button type="button" class="button filtr-menu">
@@ -79,7 +79,8 @@
                         </svg>
                     </button>
                     <!-- колекція фільтрів з категорій (формуєтся після опитування)-->
-                    <ul class="list filter-collections">
+                     <!-- Скрити\відкрити при натисканні кнопки меню і зменьшення -->
+                    <ul class="list filter-collections visually-hidden">
                         <li> 
                             <div class="box-collection red"> 
                                 <button type="button" class="button-filtr on-foot">Піші</button>
@@ -124,7 +125,7 @@
                         </li>
                     </ul>
                     <!--чекбакс\кнопка зняти всі фільтри -->
-                    <button type="button" class="button filtr-menu">
+                    <button type="button" class="button filtr-menu visually-hidden">
                         <svg class="icon-menu scale-menu" width="30" height="30">
                              <use href="./imege/symbol-defs.svg#icon-shrink2"></use>
                         </svg>
@@ -138,17 +139,17 @@
              <div class="container">
                 <ul class="list bar-travel-projects">
                     <li>
-                        <button type="button" class="button advice">Рекомендації</button>
+                        <button type="button" class="button travel-projects">Рекомендації</button>
                     </li>
                     <li>
-                        <button type="button" class="button rotate">вниз\вверх</button>
+                        <button type="button" class="button travel-projects">вниз\вверх</button>
                     </li>
                         <!-- Фільтр меню містить рейтинг, нове, найближчі, ціна -->
                     <li>
-                        <button type="button" class="button projects-filter-menu">фільтр меню</button>
+                        <button type="button" class="button travel-projects">фільтр меню</button>
                     </li>
                     <li>
-                        <button type="button" class="button sale">Акції</button>
+                        <button type="button" class="button travel-projects">Акції</button>
                     </li>
                 </ul>
                 <!-- (Кнопки вибираю, пропоную *учасник) кнопка рейтингу = +меню кнопки рейтинг, нове, найблище, ціна  кнопка акції-->
@@ -199,7 +200,11 @@
 
                             </div>
 
-                            <button type="button" class="button-about-trip">Дізнатись більше</button>
+                            <button type="button" class="button-about-trip"> 
+                                <svg class="icon-menu bar-menu" width="30" height="30">
+                                    <use href="./imege/symbol-defs.svg#icon-arrow-right2"></use>
+                                </svg>
+                            </button>
                             
                         </div>
                     </li>
@@ -246,7 +251,11 @@
 
                             </div>
 
-                            <button type="button" class="button-about-trip">Дізнатись більше</button>
+                            <button type="button" class="button-about-trip"> 
+                                <svg class="icon-menu bar-menu" width="30" height="30">
+                                    <use href="./imege/symbol-defs.svg#icon-arrow-right2"></use>
+                                </svg>
+                            </button>
                             
                         </div>
                     </li>
